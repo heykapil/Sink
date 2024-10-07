@@ -1,3 +1,7 @@
+[[analytics_engine_datasets]]
+binding = "sink-72hx"
+dataset = "sink-72hx"
+
 upload_source_maps = true
 
 [dev]
