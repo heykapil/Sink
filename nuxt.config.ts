@@ -50,11 +50,11 @@ export default defineNuxtConfig({
   },
 
   runtimeConfig: {
-    siteToken: 'SinkCool',
+    siteToken: process.env.NUXT_SITE_TOKEN,
     redirectStatusCode: '301',
     linkCacheTtl: 60,
     redirectWithQuery: false,
-    homeURL: '',
+    homeURL: 'https://kapil.app',
     cfAccountId: '',
     cfApiToken: '',
     dataset: 'sink',
