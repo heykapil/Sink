@@ -1,6 +1,6 @@
 export default eventHandler(() => {
   return {
-    name: 'Sink',
-    url: 'https://sink.cool',
+    name: 'Links',
+    url: 'https://link.kapil.app',
   }
 })
