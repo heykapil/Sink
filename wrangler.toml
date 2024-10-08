@@ -1,5 +1,5 @@
 [[analytics_engine_datasets]]
-binding = "sink"
+binding = "ANALYTICS"
 dataset = "sink"
 
 upload_source_maps = true
