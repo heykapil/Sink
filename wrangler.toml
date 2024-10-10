@@ -1,6 +1,6 @@
 [[analytics_engine_datasets]]
 binding = "ANALYTICS"
-dataset = "sink"
+dataset = "sink_72hx"
 
 upload_source_maps = true
 
