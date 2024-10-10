@@ -52,17 +52,17 @@ export default defineNuxtConfig({
   runtimeConfig: {
     siteToken: process.env.NUXT_SITE_TOKEN,
     redirectStatusCode: '307',
-    linkCacheTtl: 60,
-    redirectWithQuery: true,
-    homeURL: 'https://kapil.app',
+    linkCacheTtl: process.env.NUXT_LINK_CACHE_TTL,
+    redirectWithQuery: process.env.NUXT_REDIRECT_WITH_QUERY,
+    homeURL: process.env.NUXT_HOME_URL,
     cfAccountId: process.env.NUXT_CF_ACCOUNT_ID,
     cfApiToken: process.env.NUXT_CF_API_TOKEN,
-    dataset: 'sink',
+    dataset: process.env.NUXT_DATASET,
     aiModel: '@cf/meta/llama-3.1-8b-instruct',
     aiPrompt: `You are a URL shortening assistant, please shorten the URL provided by the user into a SLUG. The SLUG information must come from the URL itself, do not make any assumptions. A SLUG is human-readable and should not exceed three words and can be validated using regular expressions {slugRegex} . Only the best one is returned, the format must be JSON reference {"slug": "example-slug"}`,
     public: {
       previewMode: '',
-      slugDefaultLength: '4',
+      slugDefaultLength: process.env.NUXT_PUBLIC_SLUG_DEFAULT_LENGTH,
     },
   },
 
